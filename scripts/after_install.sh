@@ -4,7 +4,7 @@
 cd /var/www/html
 
 # install dependencies
-npm install
-npm run build
+#npm install
+#npm run build
 
 

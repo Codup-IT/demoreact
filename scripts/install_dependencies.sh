@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/ubuntu/app
-npm install
+#cd /home/ubuntu/app
+#npm install
