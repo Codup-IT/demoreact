@@ -9,6 +9,10 @@ phases:
       - echo Building the application...
       - npm run build
 artifacts:
+  # include all files required to run the application
   files:
-    - '**/*'
-  discard-paths: yes
+    - public/**/*
+    - src/**/*
+    - package.json
+    - appspec.yml
+    - scripts/**/*
