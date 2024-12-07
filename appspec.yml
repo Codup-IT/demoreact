@@ -5,7 +5,8 @@ files:
     destination: /home/ubuntu/app
 hooks:
   AfterInstall:
-    - location: scripts/install_dependencies.sh
+      pwd
+    - location: /home/ubuntu/app/scripts/install_dependencies.sh
       timeout: 300
       runas: root
   ApplicationStart:
