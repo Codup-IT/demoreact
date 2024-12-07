@@ -1,18 +1,18 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html
+  - source: /var/www/html/scripts
+    destination: /home/ubuntu
 hooks:
   ApplicationStop:
-    - location: scripts/application_stop.sh
+    - location: /var/www/html/scripts/application_stop.sh
       timeout: 300
       runas: ubuntu
   BeforeInstall:
-    - location: scripts/before_install.sh
+    - location: /var/www/html/scripts/before_install.sh
       timeout: 300
       runas: ubuntu
   ApplicationStart:
-    - location: scripts/application_start.sh
+    - location: /var/www/html/scripts/application_start.sh
       timeout: 300
       runas: ubuntu
